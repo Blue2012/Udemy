@@ -32,3 +32,7 @@ pip install notebook
 jupyter notebook
 ```
 
+notebookの母体になるサーバが起動して、自動でブラウザが起動  
+かなり、簡単にインストール&起動ができた！
+
+![image](https://user-images.githubusercontent.com/18514297/103413430-d6866980-4bbc-11eb-809c-77cc79816bb7.png)
