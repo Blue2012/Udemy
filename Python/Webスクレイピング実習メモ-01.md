@@ -36,3 +36,25 @@ notebookの母体になるサーバが起動して、自動でブラウザが起
 かなり、簡単にインストール&起動ができた！
 
 ![image](https://user-images.githubusercontent.com/18514297/103413430-d6866980-4bbc-11eb-809c-77cc79816bb7.png)
+
+### Seleniumのインストール
+以下のコマンドを利用して、インストールする  
+
+```
+pip install selenium
+```
+
+pillowというライブラリもインストールするようだ  
+
+```
+pip install pillow
+```
+
+JupyterNotebook上でSeleniumを実行しようとするとエラーが発生する  
+
+
+![image](https://user-images.githubusercontent.com/18514297/103432486-e042b800-4c22-11eb-921d-6e129408a881.png)
+
+
+`WebDriverException: Message: "geckodriver" executable needs to be in PATH.`
+
