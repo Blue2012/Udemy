@@ -66,8 +66,20 @@ elem_username.send_keys('ログインID')
 
 send_keysというのが項目に対するアクションとなる   
 同じ要領でパスワードにも値を自動で入力させる   
+検索するID名をpasswordに変更する
 
 ```python
-elem_username = browser.find_element_by_id('password')
-elem_username.send_keys('kohei')
+elem_password = browser.find_element_by_id('password')
+elem_password.send_keys('kohei')
 ```
+
+最後のログインボタンを押下するのは以下のコマンドで実行することが可能   
+今度は検索するID名をbtn_loginに変更する   
+クリックしたい場合、アクション名は分かりやすく`click`となる   
+<u>__ここで注意するべきなのは`click`のメソッドを指定するときに`()`を忘れないようにすること、間違えて()を忘れると何も起きない__</u>
+
+```python
+elem_btn = browser.find_element_by_id('login-btn')
+elem_btn.click()
+```
+
