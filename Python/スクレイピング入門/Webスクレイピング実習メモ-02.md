@@ -57,3 +57,17 @@ elem_username = browser.find_element_by_id('username')
 個人的な理解イメージだが、webdriverというライブラリのなかに「find_element_by_id」というメソッドがあり、id名の中から「username」の値を探してくるというもののようだ。
 
 ![image](https://user-images.githubusercontent.com/18514297/103439816-976f1b80-4c83-11eb-9901-a7cf16e27451.png)
+
+で、探してきたidの項目に対して、自動で実行する操作を指定するのが以下になる
+
+```python
+elem_username.send_keys('ログインID')
+```
+
+send_keysというのが項目に対するアクションとなる   
+同じ要領でパスワードにも値を自動で入力させる   
+
+```python
+elem_username = browser.find_element_by_id('password')
+elem_username.send_keys('kohei')
+```
