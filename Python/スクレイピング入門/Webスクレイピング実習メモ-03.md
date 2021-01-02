@@ -22,6 +22,8 @@ elems_th = browser.find_elements_by_tag_name('th')
 
 ![image](https://user-images.githubusercontent.com/18514297/103448815-23b02b80-4ce2-11eb-8b2f-ba6bee6ef2c1.png)
 
+以下のような形で配列番号を指定する   
+
 ```python
 elems_th[0].text
 ```
