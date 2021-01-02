@@ -27,3 +27,35 @@ elems_th = browser.find_elements_by_tag_name('th')
 ```python
 elems_th[0].text
 ```
+
+これをfor文を利用して、一括で取得しようとすると以下になる    
+
+```python
+# 配列の初期化
+keys = []
+# 対象要素の取得
+elems_th = browser.find_elements_by_tag_name('th')
+# 1つ1つの要素を取得し、1つの変数に追加する
+for elems_th in elems_th:
+    key = elems_th.text
+    keys.append(key)
+```
+
+上記は項目の取得、続いて、各項目に格納されている値を取得する   
+項目は「th」という要素に格納されていた   
+値は「td」という要素に格納されている    
+
+なので、先程のコードを応用して以下のようなコードを実装する
+
+```python
+# 配列の初期化
+keys = []
+# 対象要素の取得
+elems_td = browser.find_elements_by_tag_name('td')
+# 1つ1つの要素を取得し、1つの変数に追加する
+for elems_td in elems_td:
+    key = elems_td.text
+    keys.append(key)
+```
+
+これでページに表示されている各項目名とそれに紐づく値を取得することができた
